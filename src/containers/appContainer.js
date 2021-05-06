@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import fetchCharactersInfo from '../actionCreators';
+import fetchCharactersQuote from '../actionCreators';
 import App from '../App';
 
 const mapStateToProps = ({ fetchingCharacters }) => ({
@@ -8,7 +8,7 @@ const mapStateToProps = ({ fetchingCharacters }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchCharactersInfo: fetchCharactersInfo(dispatch),
+  fetchCharactersQuote: fetchCharactersQuote(dispatch),
 });
 
 export default connect(

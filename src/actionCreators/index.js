@@ -1,4 +1,4 @@
-const fetchCharactersInfo = dispatch => async () => {
+const fetchCharactersQuote = dispatch => async () => {
   dispatch({
     type: 'FETCH_CHARACTERS_INFO_API',
   });
@@ -13,4 +13,4 @@ const fetchCharactersInfo = dispatch => async () => {
   console.log('test :', characters);
 };
 
-export default fetchCharactersInfo;
+export default fetchCharactersQuote;

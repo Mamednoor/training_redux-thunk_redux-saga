@@ -6,7 +6,7 @@ import CharacterCard from './containers/charactersCardContainer';
 
 class App extends Component {
   componentDidMount() {
-    this.props.fetchCharactersInfo();
+    this.props.fetchCharactersQuote();
   }
 
   render() {
@@ -30,7 +30,7 @@ class App extends Component {
 
 App.propTypes = {
   fetchingCharacters: PropTypes.bool.isRequired,
-  fetchCharactersInfo: PropTypes.func.isRequired,
+  fetchCharactersQuote: PropTypes.func.isRequired,
 };
 
 export default App;
